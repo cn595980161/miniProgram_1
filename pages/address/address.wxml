@@ -1,0 +1,73 @@
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="收货人"
+    placeholder="请输入收货人"
+  />
+
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ sms }}"
+    center
+    clearable
+    label="短信验证码"
+    placeholder="请输入手机号"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary">发送验证码</van-button>
+  </van-field>
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="验证码"
+    placeholder="请输入验证码"
+    bind:click-icon="onClickIcon"
+  />
+</van-cell-group>
+
+<van-field 
+  label="地区" 
+  placeholder="请选择" 
+  value="{{ area_text }}"
+  disabled 
+  is-link 
+  arrow-direction="down" 
+  bind:tap="showArea"
+/>
+<van-popup show="{{ show }}" position="bottom" bind:close="hideArea">
+  <van-area 
+    area-list="{{ areaList }}" 
+    columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}" 
+    title="地区" 
+    bind:confirm="areaConfirm"
+    bind:cancel="areaancel"
+  />
+</van-popup>
+<!--  -->
+
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    autosize
+    type="textarea"
+    label="详细地址"
+    placeholder="如街道 门牌号 小区 楼栋号"
+    bind:click-icon="onClickIcon"
+  />
+</van-cell-group>
+
+<van-cell-group>
+    <van-button size="small" round type="danger">保存</van-button>
+    <van-button size="small" plain hairline round type="danger" bind:click="goPersonal">返回</van-button>
+</van-cell-group>

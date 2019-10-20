@@ -1,0 +1,31 @@
+/* .userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+} */
+
+.userinfo{  
+  display: flex;
+  background:#d72122;
+  padding:50rpx 30rpx 50rpx 30rpx;
+}   
+.userinfo-avatar {  
+  overflow:hidden;  
+  /* display: block;   */
+  width: 64rpx;  
+  height: 64rpx;  
+  /* margin-top: 32rpx;   */
+  border-radius: 50%;  
+  border: 1px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}  
+.userinfo-nickname{
+  margin:22rpx 0rpx 0rpx 20rpx;
+  font-size: 20rpx;
+  color: #fff;
+  /* overflow: hidden;
+  text-overflow:  ellipsis;
+  white-space: nowrap; */
+}

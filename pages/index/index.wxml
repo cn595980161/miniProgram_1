@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="" class="weui-footer__link">上海物联网科技有限公司</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © 程序媛专用</view>
+</view>
+
+<van-button type="primary">按钮</van-button>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/address/address",
+    "pages/prize/prize",
+    "pages/prizeDetail/prizeDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d72122",
+    "navigationBarTitleText": "东家福利社",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#d72122",
+    "list": [
+      {
+        "pagePath": "pages/prize/prize",
+        "text": "最新抽奖",
+        "iconPath": "images/tabbar/prize.png",
+        "selectedIconPath": "images/tabbar/prize_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "揭晓大厅",
+        "iconPath": "images/tabbar/result.png",
+        "selectedIconPath": "images/tabbar/result_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "vant-weapp/button"
+  },
+  "sitemapLocation": "sitemap.json"
+}
